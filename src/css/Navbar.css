@@ -1,0 +1,143 @@
+p {
+  color: cornsilk;
+  background-color: darkorange;
+}
+p1 {
+  color: cornsilk;
+  background-color: darkorange;
+}
+h1 {
+  color: darkorchid;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar {
+  background-color: black;
+  padding-top: 40px;
+  padding-left: 15px;
+  display: block;
+  justify-content: space-between;
+  float: left;
+  top: 0%;
+  left: 0%;
+  height: 400%;
+  position: fixed;
+}
+.sidebar a{
+
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: lime;
+  font-weight: bold;
+  padding: 15px;
+}
+.sidebar a:hover {
+
+  background-color: rgb(91, 125, 125);
+  border: 1px solid rgb(192, 231, 20);
+}
+.sidebar ul li {
+  width: 100%;
+  list-style: none;
+  justify-content: space-between;
+  display: block;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.logo {
+  color: #ddd;
+  font-size: 1.5cm;
+}
+.navlinks {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navlinks a {
+  padding: 10px;
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+}
+.navlinks a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0%;
+  height: 100%;
+  border-bottom: 3px solid brown;
+  transition: 0.4s linear;
+}
+.nav-links a:hover:before {
+  width: 90%;
+}
+.hamburger {
+  display: none;
+  color: #e2e6e2;
+  font-size: 1.5cm;
+  cursor: pointer;
+  top:0;
+}
+.ham {
+  width: 30px;
+}
+.closebtn {
+  color: lime;
+}
+
+@media screen and (max-width: 600px) {
+  .navlinks {
+    float: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 20px;
+    background-color: #333;
+    padding: 1px;
+  }
+  .navlinks.show {
+    display: flex;
+  }
+  .navlinks li {
+    margin: 0;
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger
+  {
+    margin-top:0%;
+  }
+}
