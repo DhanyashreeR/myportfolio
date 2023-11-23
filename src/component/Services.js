@@ -1,23 +1,26 @@
-
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import "../css/Services.css"
+import "../css/Services.css";
+import Loader  from "./Loader";
 
 function Services() {
-
+  const [loading ,setLoader]= useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+setLoader(true);
 
     emailjs.sendForm('service_t3q11zr', 'template_6kgofwm', form.current, '_XZVDQEFO8ainaCCz')
       .then((result) => {
           console.log(result.text);
           alert("form submitted");
+          setLoader(false);
       }, (error) => {
           console.log(error.text);
       });
   };
+
   return  <div className="footer">
     
     {/* <h2><u>SERVICES:</u></h2>
@@ -26,7 +29,7 @@ function Services() {
     <h2>  WhatsApp: 8296259270</h2><h2>Phone: 8861369926</h2>
      <h2>email: dhanyarbaliga@gmail.com</h2> 
     </p> */}
-        <h2><u>SERVICES:</u></h2>
+          <h2><u>SERVICES:</u></h2>
     <form ref={form} onSubmit={sendEmail}>
         <table>
           <tr>
@@ -47,19 +50,25 @@ function Services() {
           <label>Address</label>
           <textarea name="address" ></textarea>
          </tr>
+         
          <tr>
          
           <td>
+          {loading ?"":
             <input type="submit" value="submit" name="submit" />
-         
+           }
             <input type="reset" value="reset" name="reset"/>
           </td>
-         </tr>
-        </table>
-      </form>
 
+         </tr>
+         {loading ? <Loader/>:null}
+        </table>
+        
+      </form>
+           
 
   </div>;
+ 
 }
 
 export default Services;

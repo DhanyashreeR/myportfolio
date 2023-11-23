@@ -1,16 +1,17 @@
 import Body from "./Body";
-
+import "../css/Body.css";
  export default function About(){
     return (
         <>
+        <center>
         <h2><u>ABOUT:</u></h2>
-        <p>
-        <ul>
-        <li><h3>Deterministic</h3></li>
-        <li><h3>Focussed</h3></li>
-        <li><h3>Passionate</h3></li>
-        </ul>
-        </p>
+        <h3>Deterministic</h3>
+        <h3>Focussed</h3>
+        <h3>Passionate</h3>
+       
+        </center>
+       
+     
     
         </>
     );

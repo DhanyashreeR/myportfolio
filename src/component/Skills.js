@@ -1,37 +1,42 @@
 import Body from "./Body";
 import "../css/Skills.css";
+import html from "../images/html.jpg";
+ import css from "../images/css.jpg";
+import javascript from "../images/javascript.jpg";
+import Card from "./Card";
+
 export default function Skills() {
+  const SkillsP=[
+{
+  id:1,
+  h:"",
+  p1:html
+  
+},
+{
+  id:2,
+  h:"",
+  p1:css
+},
+{
+  id:3,
+  h:"",
+  p1:javascript
+}
+
+  ];
   return (
     <>
-      <h2>
-        <u>SKILLS:</u>
-      </h2>
-      <center>
-        <div className="box">
-          <div className="div1">
-            <h3>
-              <ul>
-                {" "}
-                <h1>Web development:</h1>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </h3>
-          </div>
-          <div className="div2">
-            <h3>
-              <ul>
-                {" "}
-                <h1>Others:</h1>
-                <li>C programming</li>
-                <li>Python</li>
-                <li>Java</li>
-              </ul>
-            </h3>
-          </div>
-        </div>
-      </center>
-    </>
+    <h2><u>SKILLS:</u></h2>
+    <div className="skills">
+    {
+    SkillsP.map((item)=>(
+      <Card skill={item}/>
+   ) )
+   }
+
+</div>
+     </>
+    
   );
 }

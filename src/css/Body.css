@@ -1,7 +1,7 @@
 
 p{
   color: cornsilk;
-  background-color: darkorange;
+  background-color:rgb(192, 192, 192);
 }
 
 
@@ -13,8 +13,13 @@ color: darkmagenta;
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: cadetblue;
+background-image: linear-gradient(rgb(158, 12, 177),black);
+
 }
-
-
-
+h3{
+  color:black;
+}
+i {
+  font-style: italic;
+  color: silver;
+}

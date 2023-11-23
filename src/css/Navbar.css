@@ -16,17 +16,21 @@ body {
 }
 
 .navbar {
-  background-color: #333;
-
+  background-color:black;
+  color: limegreen;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.navbar a:hover {
 
+  background-color: rgb(91, 125, 125);
+  border: 1px solid rgb(192, 231, 20);
+}
 .navbar a {
   position: relative;
-  color: white;
+  color: lime;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
