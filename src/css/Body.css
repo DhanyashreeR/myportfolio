@@ -1,7 +1,8 @@
 
 p{
-  color: cornsilk;
-  background-color:rgb(192, 192, 192);
+  color: silver;
+
+  font-size: medium;
 }
 
 
@@ -22,4 +23,49 @@ h3{
 i {
   font-style: italic;
   color: silver;
+}
+.abt{
+  text-align:center;
+ padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  size: 50px;
+
+}
+.pic{
+height: 500px;
+
+}
+.about{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+.abtpic{
+  height: 300px;
+  width:600px;
+}
+
+
+@media screen and (max-width: 600px) {
+center{
+  padding-bottom: 50px;
+}
+.about{
+display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+.abt{
+  text-align:center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  size: 50px;
+
+}
+
 }

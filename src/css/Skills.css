@@ -1,8 +1,6 @@
  
 
-ul {
-  list-style-type: none;
-}
+
 .skills
 {
   text-align: center;
@@ -27,6 +25,10 @@ ul {
   flex-wrap: wrap;
  justify-content: space-evenly;
 
+
+}
+.card{
+  padding-bottom: 3%;
 }
   
 }

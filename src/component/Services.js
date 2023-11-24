@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import "../css/Services.css";
 import Loader  from "./Loader";
 
+
 function Services() {
   const [loading ,setLoader]= useState(false);
   const form = useRef();
@@ -22,14 +23,14 @@ setLoader(true);
   };
 
   return  <div className="footer">
-    
+     <h2><u>CONTACT:</u></h2>
     {/* <h2><u>SERVICES:</u></h2>
     <h3>Contact me to make an appointment</h3>
     <p><h2><i><u>Contact details:</u></i></h2>
     <h2>  WhatsApp: 8296259270</h2><h2>Phone: 8861369926</h2>
      <h2>email: dhanyarbaliga@gmail.com</h2> 
     </p> */}
-          <h2><u>SERVICES:</u></h2>
+         
     <form ref={form} onSubmit={sendEmail}>
         <table>
           <tr>

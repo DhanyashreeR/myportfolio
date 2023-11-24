@@ -1,7 +1,4 @@
-p {
-  color: cornsilk;
-  background-color: darkorange;
-}
+
 p1 {
   color: cornsilk;
   background-color: darkorange;
@@ -18,7 +15,7 @@ body {
 .navbar {
   background-color:black;
   color: limegreen;
-  padding: 15px;
+  padding: 7px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,8 +137,7 @@ body {
   .hamburger {
     display: block;
   }
-  .hamburger
-  {
-    margin-top:0%;
+  .container{
+   padding-bottom: 30px;
   }
 }
