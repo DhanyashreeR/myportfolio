@@ -4,7 +4,7 @@ function Education() {
     <div>
       <center>
         <h2>
-          <u>EDUCATION:</u>
+          <u>EDUCATION</u>
         </h2>
         <br />
 

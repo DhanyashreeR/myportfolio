@@ -24,7 +24,7 @@ export default function Skills() {
     <>
       <center>
         <h2>
-          <u>SKILLS:</u>
+          <u>SKILLS</u>
         </h2>
       </center>
       <div className="skills">

@@ -4,7 +4,7 @@ import web from "../images/web.jpg";
 export default function About() {
   return (
     <>
-   <center><h2><u>ABOUT:</u></h2></center> 
+   <center><h2><u>ABOUT</u></h2></center> 
   
       <div className="about">
        
