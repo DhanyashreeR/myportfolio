@@ -14,7 +14,7 @@ export default function About() {
         <p >
           Hello! I'm Dhanyashree R, a dedicated web developer,with a deep rooted
           passion for coding. My expertise spans across a range of
-          technologies,including HTML, CSS, Javascript,and more. Whether it's
+          technologies,including HTML, CSS, Javascript,ReactJS, and more. Whether it's
           crafting responsive and mobile friendly websites,optimizing
           performance, or diving into the world of web development throws my
           way. In additon, to my technical skills, I'm a firm believer in the
