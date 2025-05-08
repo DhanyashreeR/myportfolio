@@ -1,0 +1,8 @@
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    console.log("Received request from Forge");
+    return res.status(200).json({ body: 'Remote app invocation successful from Vercel!' });
+  } else {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+}
